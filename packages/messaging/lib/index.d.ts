@@ -557,7 +557,7 @@ export namespace FirebaseMessagingTypes {
      * `react-native-splash-screen` we strongly recommend you migrate to `react-native-bootsplash`
      * which is actively maintained and avoids these issues
      */
-    getInitialNotification(): Promise<RemoteMessage | null>;
+    getInitialNotification(): Promise<RemoteMessage | null | undefined>;
 
     /**
      * Returns an FCM token for this device. Optionally you can specify a custom authorized entity
